@@ -68,7 +68,7 @@
             var create_time = Math.round(new Date(Date.UTC(2023, 03, 10, 0, 0, 0)).getTime() / 1000);
             var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
             currentTime = secondToDate((timestamp - create_time));
-            document.getElementById("htmer_time").innerHTML = 'Camp has been up for' + currentTime[0] + 'days';
+            document.getElementById("htmer_time").innerHTML = '距第一次发文已 ' + currentTime[0] + '天' + currentTime[1] + '时' + currentTime[0] + '分' + currentTime[0] + '秒 ';
           }
           setInterval(setTime, 1000);
         </script>
