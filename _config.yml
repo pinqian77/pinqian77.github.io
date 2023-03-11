@@ -1,7 +1,7 @@
 # Setup
-title:               Pin (Campion) Qian
+title:               Campion
 tagline:             'Blogs'
-description:         Only the Paramoid Survive.
+description:         Forbidden safety.
 url:                 https://pinqian77.github.io
 baseurl:             ''
 paginate:            5
@@ -11,9 +11,9 @@ timezone:            Europe/London
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Pin Qian
+  url:               https://twitter.com/pinqian77
+  email:             pinqian77@gmail.com
 
 # Gems
 plugins:
@@ -21,7 +21,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
-version:             1.0
+version: 1.0
 
 minima:
   date_format: "%b %-d, %Y"
