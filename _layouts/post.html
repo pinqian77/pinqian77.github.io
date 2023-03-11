@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="post heti">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}  &emsp;
+    <i class="fa fa-eye" aria-hidden="true"></i>
+    <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+      <i class="leancloud-visitors-count">1000000</i>
+    </span>
+  </span>
+
+  {{ content }}
+</div>
+
+{% if site.related_posts.size >= 1 %}
+<div class="related heti">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<head>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+<body>
+  <div id="vcomments"></div>
+  <script>
+      new Valine({
+          el: '#vcomments',
+          appId: 'kGIkcDzc1BFWWNf504I5LZoB-gzGzoHsz',
+          appKey: 'KcwSdndj502oYPOlILwAdLoN',
+          visitor: true
+      })
+  </script>
+</body>
+
+
