@@ -31,13 +31,15 @@ ul{
     list-style-type: none;
 }
 a{
-    text-decoration: none;
-    color: var(--dark-color);
+    /* text-decoration: none; */
+    color: rgb(221, 142, 142);
 }
 img{
     width: 100%;
+    height: 100%;
     display: block;
 }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -50,8 +52,10 @@ h1, h2, h3{
     margin-top: 0;
     line-height: 1.3;
     margin-bottom: 2rem;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
+
+
 .flex{
     display: flex;
     align-items: center;
@@ -68,14 +72,49 @@ h1, h2, h3{
 .lead{
     opacity: 0.8;
     padding: 1rem 0;
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     font-weight: 300;
     line-height: 1.8;
+    color: var(--light-color);
 }
+
+/* navbar */
+.navbar {
+    position: fixed; /* This will fix the navbar at the top */
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Replace with your preferred color */
+    color: #fff; /* Replace with your preferred color */
+    z-index: 1000; /* This will place the navbar above other elements */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white; /* Replace with your preferred color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #111; /* Replace with your preferred color */
+}
+
 
 /* header */
 #header{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/header-banner.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(19, 14, 14, 0.5), rgba(0, 0, 0, 0.8)), url('../images/header-bg.png') center/cover no-repeat fixed;
     justify-content: flex-start;
     align-items: flex-end;
 }
@@ -116,11 +155,40 @@ h1, h2, h3{
 }
 
 /* about */
+#about{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header-bg.png') center/cover no-repeat fixed;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Adjust according to your layout */
+    gap: 20px; /* If you want some gap between the columns */
+}
+
 .about-left{
+    margin-top: 1rem;
     margin-bottom: 4rem;
-    height: 480px;
+    height: 500px;
     overflow: hidden;
 }
+.about-left .info {
+    margin-top: 1rem;
+}
+
+.about-left .info h3 {
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-left .info p {
+    font-size: 1.5rem;
+    color: #777;
+    text-align: center;
+}
+
 /* button down and title -reusable */
 .btn-down{
     font-size: 3rem;
@@ -151,106 +219,250 @@ h1, h2, h3{
     left: 0;
     width: 70px;
     height: 4px;
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
+}
+.profile-img{
+    width: 90%;
+    height: 80%;
+    display: block;
+    object-fit: cover;
+    border-radius: 1.5%;
+}
+.skillset {
+    margin-top: 2rem;
 }
 
-/* work */
-#work{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/work-pic.jpg') center/cover no-repeat fixed;
+.skillset h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.skillset ul {
+    list-style-type: square; /* You can choose other types like circle, disc, none */
+    padding-left: 1rem; /* To create some space for list markers */
+}
+
+.skillset li {
+    margin-bottom: 0.5rem; /* To create some space between list items */
+}
+
+
+
+
+/* education */
+#education{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header-bg.png') center/cover no-repeat fixed;
     color: var(--light-color);
 }
-#work .title h2, #work h3{
+#education .title h2, #education h3{
     color: var(--light-color);
 }
-#work .title h2::after{
+#education .title h2::after{
     background: var(--light-color);
 }
-.work-bottom{
+.education-bottom{
     margin-top: 4rem;
     text-align: center;
 }
-.work-bottom > div .icon img{
+.education-bottom > div .icon img{
     width: 50px;
     margin: 0 auto 1.7rem auto;
 }
-/* portfolio */
-.portfolio-grid > div{
-    transition: var(--transition);
-}
-.portfolio-grid > div:hover{
-    transform: scale(0.9);
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
 }
 
-/* contact */
-#contact{
-    background-color: rgb(248, 248, 248);
+.education-card {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(204, 204, 188, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-.contact-content{
+
+.school-logo {
+    width: 80px;
+    height: auto;
+    align-self: center;
+}
+
+.education-info {
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
-}
-.contact-left{
-    margin-bottom: 5rem;
-}
-.contact-left .lead{
-    padding: 0.5rem;
-}
-.contact-left form{
-    margin-top: 3rem;
-}
-.contact-left form .form-control{
-    display: block;
-    margin: 1.6rem 0;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    padding: 1rem;
-    width: 100%;
-}
-.contact-left form .form-control::placeholder{
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-}
-.contact-left .btn-submit{
-    padding: 1.4rem 3rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    margin-top: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.6rem;
-    transition: var(--transition);
-}
-.contact-left .btn-submit:hover{
-    background-color: #000;
 }
 
-#insta{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/insta-pic.jpg') center/cover no-repeat fixed;
-    min-height: 65vh;
+.university {
+    display: flex;
+    justify-content: space-between;
 }
-#insta .title h2{
+
+/* Experience Section */
+#experience {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header-bg.png') center/cover no-repeat fixed;
     color: var(--light-color);
 }
-#insta .title h2::after{
+
+#experience .title h2 {
+    color: var(--light-color);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; /* adjust to place the timeline to the left */
+    width: 2px;
+    background: var(--light-color);
+}
+
+.timeline-event {
+    position: relative;
+    width: 80%; /* adjust to place the cards to the right of the timeline */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 6px); /* center the dot */
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--light-color);
+    border-radius: 50%;
+    left: -37px; /* adjust to place the dot on the timeline */
+}
+
+.timeline-event.present::before {
+    background-color: rgba(255, 255, 255, 0.8); /* use the color you want for the present job */
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.619);
+    border-radius: 4px;
+    color: var(--dark-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.company-logo {
+    width: 75px; /* adjust according to your preference */
+    height: auto;
+    margin-right: 20px;
+}
+
+.job-info {
+    text-align: left;
+}
+
+.card-header h3,
+.card-header h4,
+.card-header small {
+    margin: 0;
+    color: var(--dark-color);
+}
+
+.card-body {
+    margin: 0;
+    color: var(--dark-color);
+}
+
+
+/* Gallery Section */
+#gallery  {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url('../images/header-bg.png') center/cover no-repeat fixed;
+    color: var(--light-color);
+}
+
+/* gallery Section */
+#gallery {
     background-color: var(--light-color);
 }
-.insta-grid > div{
-    height: 400px;
+
+#gallery .title h2 {
+    color: var(--light-color);
+}
+
+#gallery .lead {
+    color: var(--light-color);
+}
+
+.gallery-grid {
+    column-count: 3;  /* Adjust to your preference */
+    column-gap: 10px; /* Adjust to your preference */
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Specify the behavior of each image and text on the grid */
+.gallery-grid .img-box {
+    position: relative;
     overflow: hidden;
-    transition: var(--transition);
+    break-inside: avoid; /* Prevent column breaks inside the element */
+    margin-bottom: 20px; /* Adjust to your preference */
 }
-.insta-grid > div img{
-    height: 100%;
-    object-fit: cover;
+
+.gallery-grid img {
+    width: 100%;
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease; /* transition effect */
 }
-.insta-grid > div:hover{
-    transform: scale(0.9);
+
+.gallery-grid .img-text {
+    position: absolute;
+    bottom: -100%;  /* set to -100% to fully hide the text */
+    width: 100%;
+    padding: 10px; /* Add padding */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Makes the font thinner */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: bottom 0.3s ease;
 }
+
+.gallery-grid .img-box:hover img {
+    transform: scale(1.05); /* enlarge the image 5% when mouse hovers */
+    opacity: 1;
+}
+
+.gallery-grid .img-box:hover .img-text {
+    bottom: 0; /* move to the bottom when the mouse hovers over */
+}
+
+
+
+
+
 
 /* footer */
 #footer{
     background-color: var(--dark-color);
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 .footer-content{
     text-align: center;
@@ -286,87 +498,7 @@ h1, h2, h3{
 }
 
 
-/* Media Queries */
 
-@media(min-width: 450px){
-    .work-bottom{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 3rem;
-        row-gap: 0;
-    }
-}
-@media(min-width: 576px){
-    .title h2{
-        font-size: 4rem;
-    }
-    .work-bottom{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .portfolio-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .portfolio-grid > div{
-        height: 300px;
-        overflow: hidden;
-    }
-    .portfolio-grid > div img{
-        height: 100%;
-        object-fit: cover;
-    }
-    .contact-left form .form-control{
-        max-width: 500px;
-    }
-    .footer-content ul{
-        flex-direction: row;
-    }
 
-}
 
-@media(min-width: 768px){
-    .header-content h1{
-        font-size: 7rem;
-    }
-    .about-content, .work-top{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 6rem;
-        row-gap: 0;
-    }
-    .about-left{
-        margin-bottom: 0;
-    }
-    .contact-content{
-        flex-direction: row;
-    }
-    .contact-right{
-        padding-left: 3rem;
-        width: 50%;
-    }
-    .contact-left{
-        width: 50%;
-    }
-    .insta-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media(min-width: 992px){
-    .insta-grid{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .insta-grid > div{
-        height: 250px;
-    }
-}
-
-@media(min-width: 1200px){
-    .portfolio-grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .portfolio-grid > div:nth-child(2){
-        grid-column: 2 / 4;
-    }
-    .portfolio-grid > div:nth-child(6){
-        grid-column: 1 / 3;
-    }
-}
 
