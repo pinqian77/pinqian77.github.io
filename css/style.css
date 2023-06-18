@@ -289,6 +289,12 @@ h1, h2, h3{
 #education .title h2::after{
     background: var(--light-color);
 }
+.education-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .education-bottom{
     margin-top: 4rem;
     text-align: center;
@@ -351,14 +357,18 @@ h1, h2, h3{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0; /* adjust to place the timeline to the left */
+    left: 0;
     width: 2px;
     background: var(--light-color);
 }
 
+.timeline-event.present::before {
+    background-color: rgba(255, 255, 255, 0.8); /* use the color you want for the present job */
+}
+
 .timeline-event {
     position: relative;
-    width: 80%; /* adjust to place the cards to the right of the timeline */
+    width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -366,30 +376,26 @@ h1, h2, h3{
 .timeline-event::before {
     content: '';
     position: absolute;
-    top: calc(50% - 6px); /* center the dot */
+    top: calc(50% - 6px);
     width: 12px;
     height: 12px;
     border: 2px solid var(--light-color);
     border-radius: 50%;
-    left: -37px; /* adjust to place the dot on the timeline */
-}
-
-.timeline-event.present::before {
-    background-color: rgba(255, 255, 255, 0.8); /* use the color you want for the present job */
+    left: -57px;
 }
 
 .card {
     display: inline-block;
     position: relative;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.619);
     border-radius: 4px;
     color: var(--dark-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
-    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-left: 60px;
 }
 
 .card-header {
@@ -425,10 +431,6 @@ h1, h2, h3{
 #gallery  {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url('../images/header-bg.png') center/cover no-repeat fixed;
     color: var(--light-color);
-}
-
-/* gallery Section */
-#gallery {
     background-color: var(--light-color);
 }
 
@@ -483,6 +485,13 @@ h1, h2, h3{
     bottom: 0; /* move to the bottom when the mouse hovers over */
 }
 
+/* #marquee {
+    overflow: hidden;
+    height: 600px;
+} */
+
+
+
 
 /* footer */
 #footer{
@@ -525,7 +534,7 @@ h1, h2, h3{
 /* Mobile view */
 @media only screen and (max-width: 600px) {
     body{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .container{
         padding: 0 1rem;
@@ -584,7 +593,7 @@ h1, h2, h3{
 /* Tablet view */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     body{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .container{
         padding: 0 1.5rem;
@@ -627,8 +636,8 @@ h1, h2, h3{
     }
     .education-card {
         flex-direction: row;
-        align-items: flex-start;
         gap: 35px;
+        width: 85%;
     }
     .card {
         padding: 40px;
