@@ -11,20 +11,27 @@
     <link rel = "stylesheet" href = "css/style.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href = "#experience">Experience</a></li>
-                <li><a href = "#gallery">Gallary</a></li>
-                <li><a href = "#blog">Blog</a></li>
-            </ul>
+
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon">&#9776;</span>
+            </button>
+            <div class="navbar-collapse">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#gallery">Gallary</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    
+
     <!-- header -->
     <header id = "header" class = "vh-100 flex">
         <div class = "container">
@@ -307,5 +314,20 @@
 
     <!-- typewriting js -->
     <script src = "typewriting-master/typewriting.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function() {
+        document.querySelector('.navbar-collapse').classList.toggle('show');});
+
+        // get all the navbar links
+        var navbarLinks = document.querySelectorAll('.navbar a');
+
+        // add event listener to each link
+        navbarLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.querySelector('.navbar-collapse').classList.remove('show');
+            });
+        });
+
+    </script>
 </body>
 </html>

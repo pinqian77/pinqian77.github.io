@@ -111,13 +111,13 @@ h1, h2, h3{
 
 
 /* navbar */
-.navbar {
-    position: fixed; /* This will fix the navbar at the top */
+/* .navbar {
+    position: fixed; 
     top: 0;
     width: 100%;
-    background-color: #333; /* Replace with your preferred color */
-    color: #fff; /* Replace with your preferred color */
-    z-index: 1000; /* This will place the navbar above other elements */
+    background-color: #333; 
+    color: #fff; 
+    z-index: 1000; 
 }
 
 .navbar ul {
@@ -133,14 +133,55 @@ h1, h2, h3{
 
 .navbar a {
     display: block;
-    color: white; /* Replace with your preferred color */
+    color: white; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    background-color: #111; /* Replace with your preferred color */
+    background-color: #111; 
+} */
+
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    display: none;
+}
+.navbar li {
+    float: left;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.navbar a {
+    display: block;
+    color: white; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar-collapse {
+    max-height: none;
+    overflow: visible;
+}
+.navbar-collapse a:hover {
+    background-color: #111;
 }
 
 
@@ -481,7 +522,6 @@ h1, h2, h3{
     border-radius: 50%;
 }
 
-/* Media Queries */
 /* Mobile view */
 @media only screen and (max-width: 600px) {
     body{
@@ -490,6 +530,9 @@ h1, h2, h3{
     .container{
         padding: 0 1rem;
     }
+    #header .header-content h1{
+        font-size: 3.5rem;
+    }
     .navbar li {
         float: none;
     }
@@ -497,8 +540,29 @@ h1, h2, h3{
         text-align: left;
         padding: 10px;
     }
-    #header .header-content h1{
-        font-size: 3.5rem;
+    .navbar-collapse {
+        transition: max-height 0.3s;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-toggler-icon {
+        font-size: 34px;
+        color: grey;
+    }
+    .navbar-collapse.show {
+        max-height: 200px;
+    }
+    .navbar-collapse ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0px;
     }
     .about-content {
         grid-template-columns: 1fr;
@@ -528,6 +592,7 @@ h1, h2, h3{
     #header .header-content h1{
         font-size: 4rem;
     }
+    
     .about-content {
         grid-template-columns: 1fr;
     }
@@ -556,6 +621,7 @@ h1, h2, h3{
     #header .header-content h1{
         font-size: 4.5rem;
     }
+    
     .about-content {
         grid-template-columns: 1fr 2fr;
     }
