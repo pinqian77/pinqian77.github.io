@@ -54,8 +54,6 @@ h1, h2, h3{
     margin-bottom: 2rem;
     color: var(--light-color);
 }
-
-
 .flex{
     display: flex;
     align-items: center;
@@ -77,6 +75,40 @@ h1, h2, h3{
     line-height: 1.8;
     color: var(--light-color);
 }
+
+.btn-down{
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: var(--transition);
+}
+.btn-down:hover{
+    opacity: 0.8;
+    transform: translateY(5px);
+}
+.btn-down-white{
+    color: var(--light-color);
+}
+
+.title{
+    margin-bottom: 5rem;
+}
+.title h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    position: relative;
+}
+.title h2::after{
+    position: absolute;
+    content: "";
+    top: 120%;
+    left: 0;
+    width: 70px;
+    height: 4px;
+    background-color: var(--light-color);
+}
+
 
 /* navbar */
 .navbar {
@@ -151,102 +183,58 @@ h1, h2, h3{
     transition: var(--transition);
 }
 .social-links li a:hover{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 /* about */
-#about{
+#about {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header-bg.png') center/cover no-repeat fixed;
     justify-content: flex-start;
     align-items: flex-end;
 }
+
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Adjust according to your layout */
-    gap: 20px; /* If you want some gap between the columns */
+    grid-template-columns: 1fr;
+    gap: 40px;
 }
 
-.about-left{
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-    height: 500px;
-    overflow: hidden;
-}
 .about-left .info {
     margin-top: 1rem;
 }
-
 .about-left .info h3 {
     margin-bottom: 0.2rem;
     font-weight: bold;
     margin-top: 30px;
     text-align: center;
 }
-
 .about-left .info p {
     font-size: 1.5rem;
     color: #777;
     text-align: center;
 }
 
-/* button down and title -reusable */
-.btn-down{
-    font-size: 3rem;
-    display: inline-block;
-    margin-top: 1rem;
-    transition: var(--transition);
-}
-.btn-down:hover{
-    opacity: 0.8;
-    transform: translateY(5px);
-}
-.btn-down-white{
-    color: var(--light-color);
-}
-.title{
-    margin-bottom: 5rem;
-}
-.title h2{
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 600;
-    position: relative;
-}
-.title h2::after{
-    position: absolute;
-    content: "";
-    top: 120%;
-    left: 0;
-    width: 70px;
-    height: 4px;
-    background-color: var(--light-color);
-}
 .profile-img{
-    width: 90%;
-    height: 80%;
-    display: block;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 1.5%;
 }
+
 .skillset {
     margin-top: 2rem;
 }
-
 .skillset h3 {
     margin-bottom: 1rem;
     font-weight: 600;
 }
-
 .skillset ul {
-    list-style-type: square; /* You can choose other types like circle, disc, none */
-    padding-left: 1rem; /* To create some space for list markers */
+    list-style-type: square;
+    padding-left: 1rem;
 }
-
 .skillset li {
-    margin-bottom: 0.5rem; /* To create some space between list items */
+    margin-bottom: 0.5rem;
 }
-
-
 
 
 /* education */
