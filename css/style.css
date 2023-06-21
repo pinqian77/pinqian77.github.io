@@ -607,7 +607,7 @@ h1, h2, h3{
     }
     .education-card {
         flex-direction: row;
-        align-items: flex-start;
+        width: 85%;
         gap: 30px;
     }
     .card {
