@@ -144,6 +144,10 @@ div#toptitle h1 {
     float: right;
 }
 
+.role-date {
+    float: right;
+}
+
 .section-table {
     margin-bottom: 0.7em;
 }
@@ -152,9 +156,32 @@ div#toptitle h1 {
     padding: 0;
 }
 
+.publication-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.publication-table td {
+    vertical-align: top;
+}
+
+.publication-media {
+    padding-right: 18px;
+    width: 360px;
+}
+
+.paper-preview {
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    display: block;
+    height: auto;
+    max-width: 340px;
+    width: 100%;
+}
+
 .news-box {
     background: #ffffff;
-    height: 60px;
+    height: 90px;
     overflow: auto;
     width: fit-content;
 }
@@ -217,6 +244,31 @@ div#footer-text {
         display: block;
         float: none;
         margin-top: 2px;
+    }
+
+    .role-date {
+        display: block;
+        float: none;
+        margin-top: 2px;
+    }
+
+    .publication-table,
+    .publication-table tbody,
+    .publication-table tr,
+    .publication-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .publication-media {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .paper-preview {
+        margin-bottom: 12px;
+        width: 100%;
+        max-width: none;
     }
 
     .gallery-grid {
