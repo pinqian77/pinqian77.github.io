@@ -152,6 +152,13 @@ div#toptitle h1 {
     padding: 0;
 }
 
+.news-box {
+    background: #ffffff;
+    height: 60px;
+    overflow: auto;
+    width: fit-content;
+}
+
 .gallery-grid {
     column-count: 3;
     column-gap: 14px;
