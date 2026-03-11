@@ -87,10 +87,9 @@ img {
 }
 
 #circle-img {
-    border-radius: 50%;
+    border-radius: 18px;
     height: 250px;
-    position: relative;
-    top: -5px;
+    object-fit: cover;
     width: 250px;
 }
 
@@ -101,6 +100,7 @@ img {
 }
 
 .bio-image-cell {
+    padding-top: 48px;
     padding-right: 10px;
     vertical-align: top;
     width: 280px;
@@ -108,7 +108,7 @@ img {
 
 .bio-copy-cell {
     padding: 0.5%;
-    vertical-align: middle;
+    vertical-align: top;
     width: 70%;
 }
 
@@ -276,6 +276,7 @@ div#footer-text {
     }
 
     .bio-image-cell {
+        padding-top: 0;
         padding-right: 0;
         width: 100%;
     }
