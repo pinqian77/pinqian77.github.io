@@ -244,6 +244,16 @@ div#toptitle h1 {
     }
 }
 
+.visitors-section {
+    margin-top: 2.5em;
+}
+
+.visitors-globe {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
 div#footer {
     border-top: 1px solid gray;
     font-size: small;
