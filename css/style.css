@@ -157,25 +157,34 @@ div#toptitle h1 {
 }
 
 .publication-table {
+    border-bottom: 1px solid #e5e5e5;
     border-collapse: collapse;
+    margin-bottom: 2.2em;
     width: 100%;
 }
 
 .publication-table td {
+    line-height: 1.45;
+    padding-bottom: 1.6em;
     vertical-align: top;
 }
 
+.publication-table p {
+    margin-bottom: 0.45em;
+}
+
 .publication-media {
-    padding-right: 18px;
-    width: 360px;
+    padding-right: 28px;
+    width: 300px;
 }
 
 .paper-preview {
     background: #ffffff;
     border: 1px solid #d6d6d6;
+    border-radius: 4px;
     display: block;
     height: auto;
-    max-width: 340px;
+    max-width: 280px;
     width: 100%;
 }
 
