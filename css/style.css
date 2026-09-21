@@ -316,15 +316,24 @@ div#footer-text {
         width: 100%;
     }
 
+    .publication-table {
+        margin-bottom: 1.6em;
+    }
+
+    .publication-table td {
+        padding-bottom: 0.8em;
+    }
+
     .publication-media {
+        padding-bottom: 0.9em;
         padding-right: 0;
         width: 100%;
     }
 
     .paper-preview {
-        margin-bottom: 12px;
-        width: 100%;
+        margin-bottom: 0;
         max-width: none;
+        width: 100%;
     }
 
     .gallery-grid {
