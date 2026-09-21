@@ -1,0 +1,108 @@
+/* Profile and supporting pages: extend the existing site theme. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 16px;
+}
+
+p,
+li {
+    line-height: 1.55;
+}
+
+.bio-image-cell {
+    padding-top: 20px;
+    padding-right: 28px;
+}
+
+.bio-copy-cell > p {
+    margin-bottom: 0.85em;
+}
+
+div#toptitle {
+    margin-bottom: 1em;
+}
+
+div#toptitle h1 {
+    color: #222222;
+    font-size: 32px;
+}
+
+.role-line {
+    font-size: 1.05em;
+    margin-top: 0.35em;
+}
+
+.focus-line {
+    color: #555555;
+    font-size: 0.92em;
+    margin-top: 0.45em;
+}
+
+.contact-line,
+.section-nav,
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em 1.1em;
+}
+
+.section-nav {
+    border-bottom: 1px solid #dddddd;
+    margin-top: 1em;
+    padding-bottom: 0.8em;
+}
+
+.section-table {
+    margin-bottom: 1.3em;
+}
+
+.work-heading {
+    margin-top: 0.7em;
+}
+
+.internship-heading {
+    margin-top: 1.15em;
+}
+
+.project-label {
+    color: #555555;
+    font-size: 0.92em;
+    margin: 0.25em 0 0.5em;
+}
+
+.project-copy {
+    max-width: 780px;
+}
+
+.page-header {
+    margin-bottom: 1.5em;
+}
+
+.archive-list li {
+    margin-bottom: 0.8em;
+}
+
+.footer-links {
+    line-height: 1.8;
+    padding: 0.6em 0;
+}
+
+@media (max-width: 760px) {
+    .bio-image-cell {
+        padding-top: 0;
+        padding-right: 0;
+    }
+
+    .bio-copy-cell {
+        padding: 0;
+    }
+
+    .publication-media {
+        padding-right: 0;
+    }
+}
