@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profile.css">
 </head>
-<body id="top">
+<body id="top" class="profile-page">
     <main>
         <table class="bio-table">
             <tbody>
@@ -52,9 +52,7 @@
 
         <nav class="section-nav" aria-label="Page sections">
             <a href="#experience">Experience</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#publications">Publications</a>
+            <a href="#work">Selected Work</a>
             <a href="#education">Education</a>
         </nav>
 
@@ -108,44 +106,52 @@
             </tbody>
         </table>
 
-        <h2 id="research">Research</h2>
-        <p>
-            <strong>AgenticVBench: Long-Horizon Omnimodal Agent Evaluation</strong>
-        </p>
-        <p class="project-copy">
-            Worked on long-horizon omnimodal agent evaluation and failure analysis.
-        </p>
-        <p class="project-label">Submitted to ICLR in 2026; under review.</p>
-
-        <h2 id="projects">Selected Projects</h2>
-        <p>
-            <a href="https://github.com/pinqian77/Dynasurge" target="_blank" rel="noreferrer"><strong>Dynasurge: Dynamic Tree Speculation for Prompt-Specific Decoding</strong></a>
-        </p>
-        <p class="project-label">Speculative Decoding &middot; LLM Inference</p>
-        <p class="project-copy">
-            Explored dynamic tree construction and verification for speculative decoding.
-        </p>
-
-        <h2 id="publications">Publications</h2>
-        <table class="publication-table">
-            <tbody>
-                <tr>
-                    <td class="publication-media">
-                        <a href="images/publications/from-deterministic-to-stochastic.pdf" target="_blank" rel="noreferrer">
-                            <img class="paper-preview" src="images/publications/from-deterministic-to-stochastic-preview.png" alt="Preview of the SPDQ paper" loading="lazy">
-                        </a>
-                    </td>
-                    <td>
-                        <p><strong>From deterministic to stochastic: an interpretable stochastic model-free reinforcement learning framework for portfolio optimization</strong></p>
-                        <p>Zitao Song, Yining Wang, <strong>Pin Qian</strong>, Sifan Song, Frans Coenen, Zhengyong Jiang, Jionglong Su.</p>
-                        <p>
-                            <em>Applied Intelligence</em>, 2023.
-                            [<a href="https://link.springer.com/article/10.1007/s10489-022-04217-5" target="_blank" rel="noreferrer">paper</a>]
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <section id="work" class="selected-work" aria-labelledby="work-heading">
+            <h2 id="work-heading">Selected Work</h2>
+            <div class="work-list">
+                <article id="research" class="work-item" aria-labelledby="agentic-title">
+                    <a class="work-media" href="images/work/agentic-vbench.png" target="_blank" rel="noreferrer" aria-label="View the AgenticVBench overview figure">
+                        <img src="images/work/agentic-vbench.png" alt="AgenticVBench overview showing assembly, repair, sequencing, and repurposing tasks" width="1789" height="988" loading="lazy" decoding="async">
+                    </a>
+                    <div class="work-content">
+                        <h3 id="agentic-title" class="work-title"><a href="https://arxiv.org/abs/2605.27705" target="_blank" rel="noreferrer">AgenticVBench: Long-Horizon Omnimodal Agent Evaluation</a></h3>
+                        <p class="work-meta">Research &middot; ICLR submission &middot; Under review</p>
+                        <p class="work-summary">Worked on long-horizon omnimodal agent evaluation and failure analysis.</p>
+                        <nav class="work-links" aria-label="AgenticVBench resources">
+                            <a href="https://arxiv.org/abs/2605.27705" target="_blank" rel="noreferrer">Paper</a>
+                            <a href="https://github.com/pinqian77/agentic-vbench" target="_blank" rel="noreferrer">Code</a>
+                        </nav>
+                    </div>
+                </article>
+                <article id="projects" class="work-item" aria-labelledby="dynasurge-title">
+                    <a class="work-media" href="images/work/dynasurge.png" target="_blank" rel="noreferrer" aria-label="View the Dynasurge evaluation figure">
+                        <img src="images/work/dynasurge.png" alt="Dynasurge evaluation comparing decoding latency and token acceptance with enhanced tree verification" width="2387" height="590" loading="lazy" decoding="async">
+                    </a>
+                    <div class="work-content">
+                        <h3 id="dynasurge-title" class="work-title"><a href="https://github.com/pinqian77/Dynasurge" target="_blank" rel="noreferrer">Dynasurge: Dynamic Tree Speculation for Prompt-Specific Decoding</a></h3>
+                        <p class="work-meta">Project &middot; Speculative Decoding &middot; LLM Inference</p>
+                        <p class="work-summary">Explored dynamic tree construction and verification for speculative decoding.</p>
+                        <nav class="work-links" aria-label="Dynasurge resources">
+                            <a href="https://github.com/pinqian77/Dynasurge" target="_blank" rel="noreferrer">Code</a>
+                        </nav>
+                    </div>
+                </article>
+                <article id="publications" class="work-item" aria-labelledby="portfolio-title">
+                    <a class="work-media" href="images/publications/from-deterministic-to-stochastic.pdf" target="_blank" rel="noreferrer" aria-label="Read the portfolio optimization paper">
+                        <img src="images/publications/from-deterministic-to-stochastic-preview.png" alt="Portfolio optimization framework showing a stochastic policy, distributional critic, and trading environment" width="1200" height="484" loading="lazy" decoding="async">
+                    </a>
+                    <div class="work-content">
+                        <h3 id="portfolio-title" class="work-title"><a href="https://link.springer.com/article/10.1007/s10489-022-04217-5" target="_blank" rel="noreferrer">From deterministic to stochastic: an interpretable stochastic model-free reinforcement learning framework for portfolio optimization</a></h3>
+                        <p class="work-meta">Publication &middot; <em>Applied Intelligence</em>, 2023</p>
+                        <p class="work-authors">Zitao Song, Yining Wang, <strong>Pin Qian</strong>, Sifan Song, Frans Coenen, Zhengyong Jiang, Jionglong Su.</p>
+                        <nav class="work-links" aria-label="Portfolio optimization resources">
+                            <a href="https://link.springer.com/article/10.1007/s10489-022-04217-5" target="_blank" rel="noreferrer">Paper</a>
+                            <a href="images/publications/from-deterministic-to-stochastic.pdf" target="_blank" rel="noreferrer">PDF</a>
+                        </nav>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <h2 id="education">Education</h2>
         <table class="section-table">
