@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">AgenticVBench-Omni conceptual overview</title>
+  <desc id="desc">Video, audio, images, and documents provide evidence for long-horizon agent work. Work outputs are scored by deterministic verifiers. This is a conceptual illustration based on the public ICLR 2027 submission abstract, not a figure from the paper.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7c91ad"/></marker>
+  </defs>
+  <rect width="960" height="600" rx="22" fill="#f7f9fc"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="66" font-size="37" font-weight="600" fill="#213d60">Omnimodal agent evaluation</text>
+    <text x="48" y="102" font-size="21" letter-spacing="2" fill="#667c97">CONCEPTUAL OVERVIEW</text>
+    <text x="48" y="165" font-size="23" fill="#667c97">Evidence</text>
+    <g fill="#fff" stroke="#dce4ef" stroke-width="2">
+      <rect x="48" y="188" width="210" height="64" rx="12"/>
+      <rect x="48" y="270" width="210" height="64" rx="12"/>
+      <rect x="48" y="352" width="210" height="64" rx="12"/>
+      <rect x="48" y="434" width="210" height="64" rx="12"/>
+    </g>
+    <g fill="none" stroke="#52739b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="69" y="207" width="28" height="26" rx="4"/><path d="m80 213 10 7-10 7z" fill="#52739b" stroke="none"/>
+      <path d="M70 297v10m7-16v22m7-29v36m7-29v22m7-16v10"/>
+      <rect x="69" y="371" width="29" height="25" rx="3"/><path d="m73 390 8-8 6 6 4-4 5 6"/><circle cx="90" cy="377" r="2" fill="#52739b" stroke="none"/>
+      <path d="M73 451h17l7 7v24H73zm17 0v8h7m-19 7h13m-13 7h13"/>
+    </g>
+    <g font-size="30" fill="#344f70">
+      <text x="116" y="230">Video</text><text x="116" y="312">Audio</text><text x="116" y="394">Images</text><text x="116" y="476">Documents</text>
+    </g>
+    <g fill="none" stroke="#7c91ad" stroke-width="3">
+      <path d="M258 220h32v123m-32-41h32m-32 82h32m-32 82h32V343h57" marker-end="url(#arrow)"/>
+      <path d="M594 343h70" marker-end="url(#arrow)"/>
+      <path d="M785 389v48" marker-end="url(#arrow)"/>
+    </g>
+    <rect x="353" y="252" width="241" height="181" rx="18" fill="#e6edf7" stroke="#bacbe0" stroke-width="2"/>
+    <text x="474" y="315" text-anchor="middle" font-size="38" font-weight="600" fill="#25496f">Agent</text>
+    <text x="474" y="355" text-anchor="middle" font-size="25" fill="#52739b">Reasoning</text>
+    <text x="474" y="391" text-anchor="middle" font-size="25" fill="#52739b">+ tool use</text>
+    <rect x="676" y="294" width="236" height="95" rx="14" fill="#fff" stroke="#dce4ef" stroke-width="2"/>
+    <text x="794" y="333" text-anchor="middle" font-size="28" fill="#344f70">Work outputs</text>
+    <text x="794" y="366" text-anchor="middle" font-size="23" fill="#667c97">+ task states</text>
+    <rect x="666" y="449" width="246" height="84" rx="14" fill="#e8f2ef" stroke="#bfd9ce" stroke-width="2"/>
+    <text x="789" y="483" text-anchor="middle" font-size="26" fill="#3c7661">Deterministic</text>
+    <text x="789" y="516" text-anchor="middle" font-size="26" fill="#3c7661">verification</text>
+    <text x="48" y="560" font-size="24" fill="#667c97">Long-horizon professional tasks</text>
+  </g>
+</svg>

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pin (Campion) Qian is a Research Engineer at Meta working on post-training for computer-use agents, agentic reinforcement learning, and evaluation.">
+    <meta name="description" content="Pin (Campion) Qian is a Research Engineer at Meta working on post-training for computer-use agents. Selected work in omnimodal agent evaluation, speculative decoding, and reinforcement learning.">
     <meta property="og:title" content="Pin Qian | Research Engineer">
-    <meta property="og:description" content="Post-training for computer-use agents at Meta. Interests in agentic reinforcement learning and evaluation.">
+    <meta property="og:description" content="Post-training for computer-use agents at Meta. Research interests in learning from interaction and reliable long-horizon behavior.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinqian77.github.io/">
     <title>Pin Qian | Research Engineer</title>
@@ -26,24 +26,22 @@
                         <div id="toptitle">
                             <h1>Pin (Campion) Qian</h1>
                             <p class="role-line">Research Engineer at <a href="https://about.meta.com/" target="_blank" rel="noreferrer">Meta</a></p>
-                            <p class="focus-line">LLM Post-Training &middot; Agentic RL &middot; Agent Evaluation</p>
                         </div>
                         <p>
-                            I work on post-training for computer-use agents at Meta. My interests include
-                            agentic reinforcement learning and evaluation.
+                            I work on <strong>post-training for computer-use agents</strong> at Meta.
+                            I am interested in how agents learn from interaction and reliably complete
+                            long-horizon tasks.
                         </p>
                         <p>
                             Previously, I worked on synthetic data at Meta and
                             game AI at <a href="https://www.tencent.com/en-us/" target="_blank" rel="noreferrer">Tencent</a>.
-                            I hold a master&rsquo;s degree in AI Engineering from
+                            I received my M.S. in AI Engineering from
                             <a href="https://www.cmu.edu/" target="_blank" rel="noreferrer">Carnegie Mellon University</a>.
                         </p>
                         <nav class="contact-line" aria-label="Contact and personal links">
                             <a href="mailto:pinqian77@gmail.com">Email</a>
                             <a href="https://github.com/pinqian77" target="_blank" rel="noreferrer">GitHub</a>
                             <a href="https://www.linkedin.com/in/pinqian/" target="_blank" rel="noreferrer">LinkedIn</a>
-                            <a href="https://pinqian77.github.io/pin-log/" target="_blank" rel="noreferrer">Blog</a>
-                            <a href="gallery.html">Gallery</a>
                         </nav>
                     </td>
                 </tr>
@@ -51,10 +49,61 @@
         </table>
 
         <nav class="section-nav" aria-label="Page sections">
-            <a href="#experience">Experience</a>
             <a href="#work">Selected Work</a>
+            <a href="#experience">Experience</a>
             <a href="#education">Education</a>
         </nav>
+
+        <section id="work" class="selected-work" aria-labelledby="work-heading">
+            <h2 id="work-heading">Selected Work</h2>
+            <div class="work-list">
+                <article id="research" class="work-item" aria-labelledby="agentic-title">
+                    <a class="work-media" href="https://openreview.net/forum?id=0oNIOXQsqu" target="_blank" rel="noreferrer" aria-label="Read the AgenticVBench-Omni submission">
+                        <img src="images/work/agentic-vbench-omni.svg" alt="Conceptual overview of AgenticVBench-Omni: video, audio, images, and documents inform agent work evaluated with deterministic verifiers" width="960" height="600" loading="lazy" decoding="async">
+                    </a>
+                    <div class="work-content">
+                        <h3 id="agentic-title" class="work-title"><a href="https://openreview.net/forum?id=0oNIOXQsqu" target="_blank" rel="noreferrer">AgenticVBench-Omni: Evaluating Omnimodal Agents on Economically Valuable Work</a></h3>
+                        <p class="work-meta">Research &middot; ICLR 2027 submission &middot; Under review</p>
+                        <p class="work-summary">Evaluating whether omnimodal agents can complete long-horizon professional tasks.</p>
+                        <p class="work-contribution">Worked on agent evaluation and failure analysis in Harbor.</p>
+                        <nav class="work-links" aria-label="AgenticVBench-Omni resources">
+                            <a href="https://openreview.net/forum?id=0oNIOXQsqu" target="_blank" rel="noreferrer">OpenReview</a>
+                            <a href="https://github.com/PhiloLabs/agentic-vbench/tree/main/tasks/agentic_vbench_understanding" target="_blank" rel="noreferrer">Code</a>
+                        </nav>
+                    </div>
+                </article>
+                <article id="projects" class="work-item" aria-labelledby="dynasurge-title">
+                    <a class="work-media" href="images/work/dynasurge.png" target="_blank" rel="noreferrer" aria-label="View the Dynasurge evaluation figure">
+                        <img src="images/work/dynasurge-preview.png" alt="Dynasurge evaluation panel comparing token latency and acceptance across token trees, with and without enhanced tree verification" width="597" height="590" loading="lazy" decoding="async">
+                    </a>
+                    <div class="work-content">
+                        <h3 id="dynasurge-title" class="work-title"><a href="https://github.com/pinqian77/Dynasurge" target="_blank" rel="noreferrer">Dynasurge: Dynamic Tree Speculation for Prompt-Specific Decoding</a></h3>
+                        <p class="work-meta">Project &middot; Speculative Decoding &middot; LLM Inference</p>
+                        <p class="work-summary">Prompt-adaptive token trees for more efficient LLM decoding.</p>
+                        <p class="work-contribution">Explored dynamic tree construction and enhanced tree verification.</p>
+                        <nav class="work-links" aria-label="Dynasurge resources">
+                            <a href="https://github.com/pinqian77/Dynasurge" target="_blank" rel="noreferrer">Code</a>
+                        </nav>
+                    </div>
+                </article>
+                <article id="publications" class="work-item" aria-labelledby="portfolio-title">
+                    <a class="work-media" href="images/publications/from-deterministic-to-stochastic.pdf" target="_blank" rel="noreferrer" aria-label="Read the portfolio optimization paper">
+                        <img src="images/publications/from-deterministic-to-stochastic-preview.png" alt="Portfolio optimization framework showing a stochastic policy, distributional critic, and trading environment" width="1200" height="484" loading="lazy" decoding="async">
+                    </a>
+                    <div class="work-content">
+                        <h3 id="portfolio-title" class="work-title"><a href="https://link.springer.com/article/10.1007/s10489-022-04217-5" target="_blank" rel="noreferrer">From deterministic to stochastic: an interpretable stochastic model-free reinforcement learning framework for portfolio optimization</a></h3>
+                        <p class="work-meta">Publication &middot; <em>Applied Intelligence</em>, 2023</p>
+                        <p class="work-authors">Zitao Song, Yining Wang, <strong>Pin Qian</strong>, Sifan Song, Frans Coenen, Zhengyong Jiang, Jionglong Su.</p>
+                        <p class="work-summary">Risk-aware stochastic policies for portfolio optimization.</p>
+                        <p class="work-contribution">Worked on environment and reward design, and stochastic policy evaluation.</p>
+                        <nav class="work-links" aria-label="Portfolio optimization resources">
+                            <a href="https://link.springer.com/article/10.1007/s10489-022-04217-5" target="_blank" rel="noreferrer">Paper</a>
+                            <a href="images/publications/from-deterministic-to-stochastic.pdf" target="_blank" rel="noreferrer">PDF</a>
+                        </nav>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <h2 id="experience">Industry Experience</h2>
         <table class="section-table">
@@ -67,7 +116,7 @@
                         </p>
                         <p><i>Research Engineer</i></p>
                         <ul>
-                            <li>Work on post-training for computer-use agents, with a focus on agentic reinforcement learning and evaluation.</li>
+                            <li>Work on post-training for computer-use agents, spanning supervised fine-tuning and reinforcement learning.</li>
                         </ul>
                     </td>
                 </tr>
@@ -106,53 +155,6 @@
             </tbody>
         </table>
 
-        <section id="work" class="selected-work" aria-labelledby="work-heading">
-            <h2 id="work-heading">Selected Work</h2>
-            <div class="work-list">
-                <article id="research" class="work-item" aria-labelledby="agentic-title">
-                    <a class="work-media" href="images/work/agentic-vbench.png" target="_blank" rel="noreferrer" aria-label="View the AgenticVBench overview figure">
-                        <img src="images/work/agentic-vbench.png" alt="AgenticVBench overview showing assembly, repair, sequencing, and repurposing tasks" width="1789" height="988" loading="lazy" decoding="async">
-                    </a>
-                    <div class="work-content">
-                        <h3 id="agentic-title" class="work-title"><a href="https://openreview.net/forum?id=0oNIOXQsqu" target="_blank" rel="noreferrer">AgenticVBench-Omni: Evaluating Omnimodal Agents on Economically Valuable Work</a></h3>
-                        <p class="work-meta">Research &middot; ICLR 2027 submission &middot; Under review</p>
-                        <p class="work-summary">Worked on long-horizon omnimodal agent evaluation and failure analysis.</p>
-                        <nav class="work-links" aria-label="AgenticVBench-Omni resources">
-                            <a href="https://openreview.net/forum?id=0oNIOXQsqu" target="_blank" rel="noreferrer">OpenReview</a>
-                            <a href="https://github.com/pinqian77/agentic-vbench" target="_blank" rel="noreferrer">Code</a>
-                        </nav>
-                    </div>
-                </article>
-                <article id="projects" class="work-item" aria-labelledby="dynasurge-title">
-                    <a class="work-media" href="images/work/dynasurge.png" target="_blank" rel="noreferrer" aria-label="View the Dynasurge evaluation figure">
-                        <img src="images/work/dynasurge.png" alt="Dynasurge evaluation comparing decoding latency and token acceptance with enhanced tree verification" width="2387" height="590" loading="lazy" decoding="async">
-                    </a>
-                    <div class="work-content">
-                        <h3 id="dynasurge-title" class="work-title"><a href="https://github.com/pinqian77/Dynasurge" target="_blank" rel="noreferrer">Dynasurge: Dynamic Tree Speculation for Prompt-Specific Decoding</a></h3>
-                        <p class="work-meta">Project &middot; Speculative Decoding &middot; LLM Inference</p>
-                        <p class="work-summary">Explored dynamic tree construction and verification for speculative decoding.</p>
-                        <nav class="work-links" aria-label="Dynasurge resources">
-                            <a href="https://github.com/pinqian77/Dynasurge" target="_blank" rel="noreferrer">Code</a>
-                        </nav>
-                    </div>
-                </article>
-                <article id="publications" class="work-item" aria-labelledby="portfolio-title">
-                    <a class="work-media" href="images/publications/from-deterministic-to-stochastic.pdf" target="_blank" rel="noreferrer" aria-label="Read the portfolio optimization paper">
-                        <img src="images/publications/from-deterministic-to-stochastic-preview.png" alt="Portfolio optimization framework showing a stochastic policy, distributional critic, and trading environment" width="1200" height="484" loading="lazy" decoding="async">
-                    </a>
-                    <div class="work-content">
-                        <h3 id="portfolio-title" class="work-title"><a href="https://link.springer.com/article/10.1007/s10489-022-04217-5" target="_blank" rel="noreferrer">From deterministic to stochastic: an interpretable stochastic model-free reinforcement learning framework for portfolio optimization</a></h3>
-                        <p class="work-meta">Publication &middot; <em>Applied Intelligence</em>, 2023</p>
-                        <p class="work-authors">Zitao Song, Yining Wang, <strong>Pin Qian</strong>, Sifan Song, Frans Coenen, Zhengyong Jiang, Jionglong Su.</p>
-                        <nav class="work-links" aria-label="Portfolio optimization resources">
-                            <a href="https://link.springer.com/article/10.1007/s10489-022-04217-5" target="_blank" rel="noreferrer">Paper</a>
-                            <a href="images/publications/from-deterministic-to-stochastic.pdf" target="_blank" rel="noreferrer">PDF</a>
-                        </nav>
-                    </div>
-                </article>
-            </div>
-        </section>
-
         <h2 id="education">Education</h2>
         <table class="section-table">
             <tbody>
@@ -189,6 +191,7 @@
     </main>
     <footer id="footer">
         <nav class="footer-links" aria-label="Footer">
+            <a href="https://pinqian77.github.io/pin-log/" target="_blank" rel="noreferrer">Blog</a>
             <a href="gallery.html">Gallery</a>
             <a href="#top">Back to top</a>
         </nav>
